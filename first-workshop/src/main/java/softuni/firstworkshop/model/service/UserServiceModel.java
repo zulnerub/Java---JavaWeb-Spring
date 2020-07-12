@@ -2,7 +2,7 @@ package softuni.firstworkshop.model.service;
 
 import softuni.firstworkshop.model.entity.Role;
 
-public class UserServiceModel {
+public class UserServiceModel extends BaseServiceModel {
 
     private String username;
     private String password;
