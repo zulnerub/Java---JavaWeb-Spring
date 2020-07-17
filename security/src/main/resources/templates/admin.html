@@ -1,9 +1,13 @@
 <!doctype html>
 <html lang="en"
-      xmlns:thw="http://www.thymeleaf.org"
+      xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
 <body>
-<h1>hello admin</h1>
+<h1>Hello, <span th:text="${user.getName()}">User name</span>!</h1>
+
+<div sec:authorize="hasRole('ADMIN')">
+    :-)
+</div>
 </body>
-</html>>
+</html>
